@@ -1,0 +1,152 @@
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+}
+@media screen and (max-width: 768px) {
+  body { background: grey; }
+}
+
+@media screen and (max-width: 600px) {
+  body { background: grey; }
+}
+
+@media screen and (max-width: 480px) {
+  body { background: lightgrey; }
+}
+
+@media screen and (max-width: 320px) {
+  body { background: lightgrey; }
+}
+
+
+
+.column{
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+/* The animation code */
+@keyframes a-beautiful-animation {
+    from {
+      background-color: red;
+    }
+    to {
+      background-color: yellow;
+    }
+}
+
+
+
+span{
+  position:relative;
+  top:80px;left:40px;
+}
+
+.square{
+  position: relative;
+  top:50px;left: 80px;
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  -webkit-animation: squareToCircle 4s infinite alternate;
+}
+
+@-webkit-keyframes squareToCircle {
+    0% {
+      border-radius: 0 0 0 0;
+      background: coral;
+      transform: rotate(0deg);
+    }
+    25% {
+      border-radius: 50% 0 0 0;
+      background: darksalmon;
+      transform: rotate(45deg);
+    }
+    50% {
+      border-radius: 50% 50% 0 0;
+      background: indianred;
+      transform: rotate(90deg);
+    }
+    75% {
+      border-radius: 50% 50% 50% 0;
+      background: lightcoral;
+      transform: rotate(135deg);
+    }
+    100% {
+      border-radius: 50% 50% 50% 50%;
+      background: darksalmon;
+      transform: rotate(180deg);
+    }
+}
+.container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: flex-start;
+
+
+}
+
+h2{
+  text-align: center;
+  font-family: cursive;
+  color: white;
+}
+
+
+
+ .item-1 {
+    width: 600px;
+    height: 250px;
+    border: 2px solid white;
+    background-color: lightgrey;
+    text-align: center;
+    padding: 15px;
+}
+  .item-1:hover {
+    border: 6px solid pink;
+    background-color: grey;
+    -webkit-transition: background-color 1s ease-out;
+    padding: 10px;
+  }
+
+
+ .item-2 {
+   width: 600px;
+   height: 250px;
+   border: 2px solid blue;
+   background-color: lightgrey;
+   text-align: center;
+   padding: 15px;
+
+}
+  .item-2:hover {
+    border: 6px solid pink;
+    background-color: lightcoral;
+    -webkit-transition: background-color 1s ease-out;
+    padding: 10px;
+  }
+
+ .item-3 {
+   width: 600px;
+   height: 250px;
+   border: 2px solid yellow;
+   background-color: lightgrey;
+   text-align: center;
+   padding: 15px;
+}
+  .item-3:hover {
+    border: 6px solid pink;
+    background-color: lightcoral;
+    -webkit-transition: background-color 1s ease-out;
+    padding: 10px;
+  }
