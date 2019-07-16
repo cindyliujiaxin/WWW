@@ -1,0 +1,71 @@
+
+
+@keyframes a-animation {
+    0% {
+      background-color: grey;
+    }
+    25% {
+      background-color: lightgrey;
+    }
+    50% {
+      background-color: white;
+    }
+    75% {
+      background-color: pink;
+    }
+    100% {
+      background-color: lightcoral;
+    }
+
+}
+
+body{
+    animation-name: a-animation;
+    animation-duration: 8s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+
+
+#projects h2,h3{
+  text-align: center;
+  font-family: cursive;
+
+}
+
+#projects ul{
+  text-align: center;
+  margin:0;
+  padding:0;
+  list-style:none;
+  }
+
+#projects li{
+  display:inline-table;
+  margin:10px 40px 0 0;
+  padding:0;
+  }
+
+
+#projects img{
+  display:inline;
+  width:190px;
+  margin:0 0 20px 0;
+  padding:10px;
+  color:#666666;
+  background-color:white;
+  border:3px solid black;
+  }
+
+#projects img:hover{
+  padding:5px;
+  color:#666666;
+  background-color:white;
+  border:5px solid pink;
+  }
+.button{
+  position: absolute;
+  right:80px;
+}

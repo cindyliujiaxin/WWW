@@ -1,0 +1,55 @@
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  position: sticky;
+  top:40px;left:40px;
+  /* By default, images are display: inline, so this changes it! */
+}
+body{
+  background:lightgrey;
+  color:white;
+  margin:0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  position: relative;
+  top:40px;left:40px;
+  /* By default, all headings are display: block, so this changes it! */
+}
+
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      background-color: grey;
+      align-items: baseline;
+    }
+    .container .column {
+      width: 33.3333%;
+      border: 2px solid pink;
+      color:white;
+    }
+    .column.hover{
+      background:pink;
+      color:black;
+      border:30px solid white;
+    }
+
+    @media screen and (max-width: 1024px) {
+      * {
+        font-size: 24px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      * {
+        font-size: 12px;
+      }
+    }
